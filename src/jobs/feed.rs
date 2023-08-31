@@ -7,7 +7,7 @@ use crate::schema;
 use crate::services::feed::FeedService;
 
 
-pub fn check_feed_types(name: &str) {
+pub fn check_feed_types(_name: &str) {
     let connection = &mut establish_connection();
     let results = feeds
         .select(Feed::as_select())
